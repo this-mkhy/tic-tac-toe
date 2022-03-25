@@ -1,0 +1,86 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin: 20px;
+    color: rgb(248, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .winner{
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .square {
+    background: #fff;
+    border: 3px solid rgb(0, 0, 0);
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 150px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0; 
+    width: 150px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .bold{
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+
+  @media only screen and (max-width : 720px) { 
+    .square {
+      background: rgb(255, 15, 15);
+      font-size: 50px;
+      height: 100px;
+      width: 100px;
+      text-align: center;
+    }
+
+    .winner{
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    .game-info {
+      font-size: 10px;
+    }
+   }
